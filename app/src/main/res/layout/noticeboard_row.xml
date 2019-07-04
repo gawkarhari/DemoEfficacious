@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFF"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp"
+    android:paddingBottom="5dp">
+    <RelativeLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/middle_linear"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue Date: "
+                android:textColor="@color/green"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fromdate_noticeboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textview"
+                android:textColor="@color/green"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Last Date: "
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/todate_noticeboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/black"
+                android:text="Textview"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+        android:id="@+id/title_noticeboard"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel"
+        android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="titile"
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="message"
+        android:id="@+id/message_noticeboard"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_noticeboard"
+        android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>

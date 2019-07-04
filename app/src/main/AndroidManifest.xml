@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobi.efficacious.demoefficacious">
+
+    
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="android.support.v4"
+        tools:replace="android:icon,android:theme,android:label">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="778c8e4ea7b696aa559ee17eba4355731cf6b463" />
+
+        <activity
+            android:name="com.mobi.efficacious.demoefficacious.activity.Login_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name="com.mobi.efficacious.demoefficacious.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.mobi.efficacious.demoefficacious.dialogbox.Standard_division_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name="com.mobi.efficacious.demoefficacious.dialogbox.Book_Details_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name="com.mobi.efficacious.demoefficacious.dialogbox.Diary_image_dialogBox"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name="com.mobi.efficacious.demoefficacious.dialogbox.image_zoom_dialog"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name="com.mobi.efficacious.demoefficacious.dialogbox.Gallery_dialogBox"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            />
+        <activity android:name="com.mobi.efficacious.demoefficacious.Tab.Admin_LeaveList"
+            android:label="Leave List"/>
+        <activity
+            android:name="com.mobi.efficacious.demoefficacious.MultiImages.activities.AlbumSelectActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobi.efficacious.demoefficacious.MultiImages.activities.ImageSelectActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.Gmail_login"
+            android:label="Gmail Verification"/>
+        <activity android:name="com.mobi.efficacious.demoefficacious.MultiImages.activities.MainImages" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.Notifiacton" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.MessageCenterActivity" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.NoticeboardActivity" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.MultiImages.activities.Single_image" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.IndividualChat" />
+        <activity android:name="com.mobi.efficacious.demoefficacious.MultiImages.activities.Three_Images" />
+
+        <service android:name="com.mobi.efficacious.demoefficacious.FCMServices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.mobi.efficacious.demoefficacious.FCMServices.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </service>
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.Fees_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.atom.mobilepaymentsdk.PayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.mobi.efficacious.demoefficacious.activity.Fee_Payment_History"
+            android:label="Payment History" />
+    </application>
+</manifest>

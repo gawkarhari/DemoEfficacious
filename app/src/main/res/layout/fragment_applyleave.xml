@@ -1,0 +1,224 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top">
+                <RelativeLayout
+                    android:id="@+id/Rel_main22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rel_main">
+                    <LinearLayout
+                        android:id="@+id/userName1"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal" >
+
+                        <Spinner
+                            android:id="@+id/sp_LeaveType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_spinner"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Rel_main1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rel_main22">
+                    <android.support.v7.widget.CardView
+
+                        android:id="@+id/cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_centerInParent="true"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+<RelativeLayout
+    android:layout_marginStart="15dp"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/fromtv"
+        android:text="FROM"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:fontFamily="@font/arabtype"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:id="@+id/dateimgfrm"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fromtv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/calenderleave" />
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/monthtv"
+        android:text="Select"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/fromtv"
+        android:layout_toRightOf="@+id/dateimgfrm"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginStart="15dp"
+        android:id="@+id/yeartv"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/monthtv"
+        android:layout_toRightOf="@+id/dateimgfrm"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginStart="3dp"
+                                android:id="@+id/totv"
+                                android:text="TO"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <Button
+                                android:fontFamily="@font/arabtype"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="35dp"
+                                android:id="@+id/dateimgto"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@+id/totv"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/calenderleave"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/monthtvto"
+                                android:text="Select"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/totv"
+                                android:layout_toRightOf="@+id/dateimgto"
+                                android:textSize="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/yeartvto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/monthtvto"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/dateimgto"
+                                android:text="Date"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/Rel_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rel_main1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <EditText
+                            android:id="@+id/edtreason_leave"
+                            android:layout_width="fill_parent"
+                            android:layout_height="160dp"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:elevation="4dp"
+                            android:padding="15dp"
+                            android:gravity="start"
+                            android:hint="Write Reason here"
+                            android:inputType="textMultiLine" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Rel_main5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rel_main4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <Button
+                            android:id="@+id/btnSubmit_leave"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_margin="4dp"
+                            android:text="Submit"
+                            android:textColor="@color/white"
+                            android:background="@drawable/button_style"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "797551645951",
+    "firebase_url": "https://notificationdemo-85e8d.firebaseio.com",
+    "project_id": "notificationdemo-85e8d",
+    "storage_bucket": "notificationdemo-85e8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797551645951:android:0a7502c742b4d6f3",
+        "android_client_info": {
+          "package_name": "com.mobi.efficacious.demoefficacious"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_dh5lPDha85pCgKimzah227l9E26pPiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797551645951:android:8fa42fa8f142a231",
+        "android_client_info": {
+          "package_name": "com.mobi.efficacious.gurukulglobal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_dh5lPDha85pCgKimzah227l9E26pPiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797551645951:android:dc10d4233b81311e",
+        "android_client_info": {
+          "package_name": "com.mobi.efficacious.notificationdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797551645951-b5v0v2ra4dvf1qtqjdcb2d1iva85s26h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobi.efficacious.notificationdemo",
+            "certificate_hash": "296b1f24879d67589bfa9343175871f2c2eb934e"
+          }
+        },
+        {
+          "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_dh5lPDha85pCgKimzah227l9E26pPiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797551645951-49369t7hnatc9v926jto70ob5ln600qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

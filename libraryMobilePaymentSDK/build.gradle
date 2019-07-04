@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    api 'com.android.support:support-v4:27.+'
+    api files('libs/MobilePaymentSDKOutput.jar')
+    api files('libs/secure-data.jar')
+    api files('libs/xercesImpl-2.6.2-jaxb-1.0.6.jar')
+}

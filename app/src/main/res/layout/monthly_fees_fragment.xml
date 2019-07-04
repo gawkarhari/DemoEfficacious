@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="255dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/relativemonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+           android:paddingLeft="1dp"
+            android:paddingRight="2dp"
+            android:layout_marginStart="13dp">
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Months:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativemonthchoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/relativemonth">
+
+
+            <CheckBox
+                android:id="@+id/checkBoxapr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="April" />
+
+            <CheckBox
+                android:id="@+id/checkBoxmay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBoxapr"
+                android:text="May" />
+
+            <CheckBox
+                android:id="@+id/checkBoxjune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBoxmay"
+                android:text="June" />
+
+            <CheckBox
+                android:id="@+id/checkBoxjuly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBoxjune"
+                android:text="July" />
+
+            <CheckBox
+                android:id="@+id/checkBoxaugust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBoxjuly"
+                android:text="August" />
+
+            <CheckBox
+                android:id="@+id/checkBoxseptember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBoxaugust"
+                android:text="September" />
+
+            <CheckBox
+                android:id="@+id/checkBoxoctober"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp"
+                android:text="October" />
+
+            <CheckBox
+                android:id="@+id/checkBoxnovember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/checkBoxoctober"
+                android:layout_below="@+id/checkBoxapr"
+                android:text="November" />
+
+            <CheckBox
+                android:id="@+id/checkBoxdecember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/checkBoxoctober"
+                android:layout_below="@+id/checkBoxmay"
+                android:text="December" />
+
+            <CheckBox
+                android:id="@+id/checkBoxjanuary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/checkBoxoctober"
+                android:layout_below="@+id/checkBoxjune"
+                android:text="January" />
+
+            <CheckBox
+                android:id="@+id/checkBoxfebruary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/checkBoxoctober"
+                android:layout_below="@+id/checkBoxjuly"
+                android:text="February" />
+
+            <CheckBox
+                android:id="@+id/checkBoxmarch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/checkBoxoctober"
+                android:layout_below="@+id/checkBoxaugust"
+                android:text="March" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativemonthchoice"
+            android:paddingLeft="2dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="13dp">
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/relative"
+                android:layout_alignTop="@+id/relative"
+                android:text="Monthly Amount:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:paddingRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/relativemonthchoice"
+            android:layout_marginStart="160dp"
+          >
+
+            <TextView
+                android:id="@+id/monthlyamountv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:text="Amount"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relative1">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonAddToFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="199dp"
+            android:background="@drawable/button_style"
+            android:text="Add to fee"
+            android:textColor="@color/caldroid_white" />
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/addtofeeerecylerview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_below="@+id/buttonAddToFee"/>-->
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

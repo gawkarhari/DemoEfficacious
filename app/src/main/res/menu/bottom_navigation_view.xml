@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/attendance"
+        android:icon="@drawable/icon_daily_attendance_679314"
+        android:title="@string/attendace"></item>
+
+    <item
+        android:id="@+id/study"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/study">
+
+    </item>
+    <item
+        android:id="@+id/event"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:title="@string/event"></item>
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="Chat">
+
+    </item>
+    <item
+        android:id="@+id/Alert"
+        android:icon="@drawable/ic_add_alert_black_24dp"
+        android:title="Notification">
+
+    </item>
+</menu>

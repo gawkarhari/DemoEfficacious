@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:layout_marginBottom="3dp">
+
+    <LinearLayout
+        android:id="@+id/Linear_allteacher1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teacher_image"
+                android:layout_marginTop="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/profile"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/name_allteacher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:text="TextView"
+                android:layout_toEndOf="@+id/teacher_image"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Dept_allteacher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_allteacher1"
+                android:layout_alignStart="@+id/name_allteacher1"
+                android:layout_below="@+id/name_allteacher1"
+                android:layout_marginTop="11dp"
+                android:text="TextView"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                app:srcCompat="@mipmap/ic_keyboard_arrow_right_black_24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/allteacher_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:id="@+id/allteacher_tv"
+    android:textSize="18dp"
+    android:text="All Teacher"
+    android:textColor="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/allstudent_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/allstudent_tv"
+        android:textSize="18dp"
+        android:text="All Student"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/allstaff_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/allstaff_tv"
+        android:textSize="18dp"
+        android:text="All Staff"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>
